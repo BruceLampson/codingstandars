@@ -91,7 +91,7 @@ The following is an example of an acceptable class declaration
         // must be indented four spaces
     }
  
-Classes that extend other classes or which implement interfaces SHOULD declare their dependencies on the same line when possible.
+Classes that extend other classes or which implement interfaces **SHOULD** declare their dependencies on the same line when possible.
 
 
     class MyClass extends AbstractFoo implements Bar
