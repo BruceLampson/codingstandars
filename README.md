@@ -105,3 +105,47 @@ If the class implements multiple interfaces and the declaration exceeds an avera
         BazInterface
     {
     }
+    
+#####Functions and Methods
+
+Methods inside classes **MUST** always declare their visibility by using one of the private, protected, or public visibility modifiers.
+
+As with classes, the brace **MUST** always be written on the line underneath the function name. Space **MUST NOT** be inserted between the function name and the opening parenthesis for the arguments.
+
+Functions **SHOULD NOT** be declared in the global scope.
+
+The following is an example of an acceptable function declaration in a class.
+
+
+    /**
+     * Documentation Block Here
+     */
+    class Foo
+    {
+        /**
+         * Documentation Block Here
+         */
+        public function bar()
+        {
+            // all contents of function
+            // must be indented four spaces
+        }
+    }
+    
+The following is an example of an unacceptable function declaration in a class.
+
+
+    /**
+     * Documentation Block Here
+     */
+    class Foo
+    {
+        /**
+         * Documentation Block Here
+         */
+        public function bar(){
+            // all contents of function
+            // must be indented four spaces
+        }
+    }
+    
