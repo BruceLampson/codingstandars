@@ -29,7 +29,9 @@ All files **MUST** only use alphanumeric characters, underscores, and the dash c
 
 #####Functions and Methods
 Function names **MUST** contain only alphanumeric characters. Underscores are not permitted. Numbers are permitted in function names but are discouraged.
+
 Function names **MUST** always start with a lowercase letter. When a function name consists of more than one word, the first letter of each new word **MUST** be capitalized. This is commonly called "camelCase" formatting.
+
 Verbosity is encouraged. Function names should be as verbose as is practical to fully describe their purpose and behavior.
 
 These are examples of acceptable names for functions:
