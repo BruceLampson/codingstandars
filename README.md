@@ -143,7 +143,7 @@ The following is an example of an unacceptable function declaration in a class.
         /**
          * Documentation Block Here
          */
-        public function bar(){
+        public function bar(){ <--- Unacceptable
             // all contents of function
             // must be indented four spaces
         }
