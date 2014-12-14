@@ -5,21 +5,21 @@ The following document provides guidelines for code formatting and documentation
 Our goal is to keep code's style consistent across all RAIN repositories. We have an open door policy. Feel free to submit a pull request if you wish to contribute.
 
 #####Topics covered
-1. File Formatting
-2. Naming Conventions
-3. Coding Style
-4. Inline Documentation
+1. File Formatting.
+2. Naming Conventions.
+3. Coding Style.
+4. Inline Documentation.
 
 #####This document attempts to follow [RFC 2119's](http://www.ietf.org/rfc/rfc2119.txt) verbosity for indicating requirements.
-- **MUST** and **MUST NOT** indicate non-optional requirements
-- **SHOULD** and  **SHOULD NOT** indicate recommendations for which exceptions may exist
-- **MAY** indicates truly optional requirements
+- **MUST** and **MUST NOT** indicate non-optional requirements.
+- **SHOULD** and  **SHOULD NOT** indicate recommendations for which exceptions may exist.
+- **MAY** indicates truly optional requirements.
 
 #####Indentation
 Indentation **MUST** consist of 4 spaces. Tabs **MUST NOT** be used for indentation.
 
 #####Namespaces
-Namespaces **SHOULD** be MixedCase, and acronyms used in namespaces **SHOULD** as well. As examples:
+Namespaces **SHOULD** be MixedCase, and acronyms used in namespaces **SHOULD** as well. As examples.
     
     - The namespace "Rain\PDF" would not be allowed, while "Rain\Pdf" is acceptable.
     - The namespace "Rain\JSON" would not be allowed, while "Rain\Json" is acceptable.
@@ -34,13 +34,13 @@ Function names **MUST** always start with a lowercase letter. When a function na
 
 Verbosity is encouraged. Function names should be as verbose as is practical to fully describe their purpose and behavior.
 
-These are examples of acceptable names for functions:
+These are examples of acceptable names for functions.
     
     doSomething();
     ringTheBell();
     callUser();
 
-The following are examples of unacceptable function names:
+The following are examples of unacceptable function names.
     
     DoSomething();
     RINGTHEBELL();
@@ -79,7 +79,7 @@ Every class **MUST** have a documentation block.
 
 All code in a class **MUST** be indented with four spaces additional to the level of indentation of the class declaration.
 
-The following is an example of an acceptable class declaration
+The following is an example of an acceptable class declaration.
 
     
     /**
@@ -170,3 +170,37 @@ If the conditional statement causes the line length to exceed the maximum line l
     ) {
         $fullName = $name . ' ' .$lastName;
     }
+
+#####Inline Documentation
+
+All class files **MUST** contain a "file-level" docblock at the top of each file and a "class-level" docblock immediately above each class. 
+
+######Files
+Every file **MUST** have a docblock at the top of the file.
+
+    /**
+     * RAIN (http://www.mediarain.com)
+     *
+     * @link      https://github.com/BruceLampson/codingstandars for the canonical source repository
+     * @copyright Copyright (c) 2014 Media Rain USA Inc. (http://www.mediarain.com)
+     * @license   https://github.com/BruceLampson/codingstandars MIT
+     */
+
+######Classes
+    /**
+     * Short description for class
+     *
+     * Long description for class (if any)...
+     */
+
+######Functions
+Every function, including object methods, **MUST** have a docblock that contains at a minimum.
+      
+    - A description of the function
+    - All of the arguments
+    - All of the possible return values (even "void")
+    - It is not necessary to use the @access annotation because the access level is already known from the public, private, or protected visibility modifier used to declare the function.
+      
+If a function or method may throw an exception, use @throws for all known exception classes.
+
+    @throws exceptionclass [description]
