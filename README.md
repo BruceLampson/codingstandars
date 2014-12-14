@@ -149,3 +149,24 @@ The following is an example of an unacceptable function declaration in a class.
         }
     }
     
+#####Control Statements (If/Else/Elseif)
+
+Control statements based on the if and elseif constructs **MUST** have a single space before the opening parenthesis of the conditional and a single space after the closing parenthesis.
+
+Within the conditional statements between the parentheses, operators **MUST** be separated by spaces for readability. Inner parentheses **SHOULD** be used to improve logical grouping for larger conditional expressions.
+
+The opening brace **MUST** be written on the same line as the conditional statement if the conditional statement does not contain a line feed. The closing brace **MUST** be written on its own line. Any content within the braces **MUST** be indented using four spaces.
+
+    if ($name != 'John') {
+        //Your code goes here
+    }
+    
+If the conditional statement causes the line length to exceed the maximum line length and has several clauses, you **MUST** break the conditional into multiple lines. In such a case, break the line prior to a logic operator, and pad the line such that it aligns under the first character of the conditional clause. The closing paren in the conditional will then be placed on a line with the opening brace, with one space separating the two, at an indentation level equivalent to the opening control statement.
+
+    
+    if (($name == 'John')
+        && ($lastName == 'Doe')
+        || ($name == 'Jane')
+    ) {
+        $fullName = $name . ' ' .$lastName;
+    }
