@@ -4,7 +4,7 @@ Proposal for Rain's coding standards
 The following document provides guidelines for code formatting and documentation to all RAIN developers. 
 Our goal is to keep code's style consistent across all RAIN repositories. We have an open door policy. Feel free to submit a pull request if you wish to contribute.
 
-##Topics covered
+####Topics covered
 1. File Formatting
 2. Naming Conventions
 3. Coding Style
