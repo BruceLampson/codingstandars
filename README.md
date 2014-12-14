@@ -52,3 +52,22 @@ Variable names **MUST** contain only alphanumeric characters. Underscores are no
 As with function names, variable names **MUST** always start with a lowercase letter and follow the "camelCaps" capitalization convention.
 
 Verbosity is encouraged. Variables should always be as verbose as practical to describe the data that the developer intends to store in them. Terse variable names such as "$i" and "$n" are discouraged for all but the smallest loop contexts. If a loop contains more than 20 lines of code, the index variables should have more descriptive names.
+
+#####Arrays/Objects
+
+When declaring an array, a trailing space MUST be added after each comma delimiter to improve readability.
+
+    [a, b, c, d]
+    
+It is permitted to declare multi-line arrays. In this case, each successive line MUST be padded with spaces such that the beginning of each line is aligned with the initial element of the array
+
+    [a, b, c, 
+     d, e, f]
+     
+Alternately, the initial array item MAY begin on the following line. If so, it MUST be padded at one indentation level greater than the line containing the array declaration, and all successive lines MUST have the same indentation; the closing paren MUST be on a line by itself at the same indentation level as the line containing the array declaration.
+
+    var letters = [
+        a, b, c,
+        d, e, f
+    ]
+    
