@@ -71,3 +71,37 @@ Alternately, the initial array item **MAY** begin on the following line. If so, 
         d, e, f
     ]
     
+#####Classes
+
+The brace **MUST** be written on the line underneath the class name, at the same level of indentation as the class declaration.
+
+Every class **MUST** have a documentation block.
+
+All code in a class **MUST** be indented with four spaces additional to the level of indentation of the class declaration.
+
+The following is an example of an acceptable class declaration
+
+    
+    /**
+     * Documentation Block Here
+     */
+    class MyClass
+    {
+        // all contents of class
+        // must be indented four spaces
+    }
+ 
+Classes that extend other classes or which implement interfaces SHOULD declare their dependencies on the same line when possible.
+
+
+    class MyClass extends AbstractFoo implements Bar
+    {
+    }
+    
+If the class implements multiple interfaces and the declaration exceeds an average line length, break after each comma separating the interfaces, and indent the interface names such that they align.
+
+    class MyClass implements
+        BarInterface,
+        BazInterface
+    {
+    }
