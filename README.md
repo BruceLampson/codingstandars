@@ -205,4 +205,4 @@ If a function or method may throw an exception, use @throws for all known except
     @throws exceptionclass [description]
     
     
-We want to hear your thought on this initiative so feel free to fork this project and contribute!
+We want to hear your thoughts on this initiative so feel free to fork this project and contribute!
