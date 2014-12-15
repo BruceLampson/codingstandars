@@ -64,7 +64,7 @@ It is permitted to declare multi-line arrays. In this case, each successive line
     [a, b, c, 
      d, e, f]
      
-Alternately, the initial array item **MAY** begin on the following line. If so, it **MUST** be padded at one indentation level greater than the line containing the array declaration, and all successive lines **MUST** have the same indentation; the closing paren **MUST** be on a line by itself at the same indentation level as the line containing the array declaration.
+Alternately, the initial array item **MAY** begin on the following line. If so, it **MUST** be padded at one indentation level greater than the line containing the array declaration, and all successive lines **MUST** have the same indentation; the closing bracket **MUST** be on a line by itself at the same indentation level as the line containing the array declaration.
 
     var letters = [
         a, b, c,
